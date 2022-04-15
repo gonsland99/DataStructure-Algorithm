@@ -19,15 +19,15 @@ public class SeqSearch {
 		Scanner sc = new Scanner(System.in);
 		int exit = -1; //프로그램 종료조건
 		
+		System.out.print("데이터 개수: ");
+		int num = sc.nextInt();
+		int[] x = new int[num];
+		
+		for(int i=0; i<num; i++) {
+			System.out.print("x["+i+"]: ");
+			x[i] = sc.nextInt();
+		}
 		while(exit == -1) {
-			System.out.print("데이터 개수: ");
-			int num = sc.nextInt();
-			int[] x = new int[num];
-			
-			for(int i=0; i<num; i++) {
-				System.out.print("x["+i+"]: ");
-				x[i] = sc.nextInt();
-			}
 			
 			System.out.print("검색할 값: ");
 			int key = sc.nextInt();
