@@ -9,14 +9,14 @@ public class IntQueueTest {
 		
 		while(true) {
 			System.out.println("현재 데이터 수: "+s.size()+"/"+s.capacity());
-			System.out.println("1.인큐 2.디큐 3.피크 4.덤프 5.종료");
+			System.out.print("1.인큐 2.디큐 3.피크 4.덤프 5.종료");
 			int menu = sc.nextInt();
 			if(menu == 5) break;
 			
 			int x;
 			switch(menu) {
 			case 1:
-				System.out.println("데이터: ");
+				System.out.print("데이터: ");
 				x = sc.nextInt();
 				try {
 					s.enqueue(x);
