@@ -25,11 +25,11 @@ public class PhysicalExamination {
 				new PhyscalData("cha", 177),
 				new PhyscalData("lee", 160),
 		};
-		System.out.println("키 검사 리스트");
-		System.out.println("이름     키");
+		System.out.println("-----키 검사 리스트-----");
+		System.out.println("이름  |   키");
 		System.out.println("-----------");
 		for(int i=0; i<x.length; i++)
-			System.out.printf("%-8s%3d\n",x[i].name, x[i].height);
+			System.out.printf("%-5s|%5d\n",x[i].name, x[i].height);
 		System.out.printf("\n평균 키: %5.1fcm\n",aveHeight(x));
 	}
 }
