@@ -17,6 +17,9 @@ public class Median {
 			return b;
 	}
 	public static void main(String[] args) {
-		
+		System.out.println(mid(1,2,3));
+		System.out.println(mid(3,2,1));
+		System.out.println(mid(3,0,5));
+		System.out.println(mid(-1,2,-3));
 	}
 }
